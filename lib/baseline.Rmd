@@ -1,0 +1,147 @@
+---
+title: "baseline"
+author: "Lingyi"
+date: "10/17/2019"
+output: html_document
+---
+
+```{r}
+feature <- function(input_list = fiducial_pt_list, index){
+  
+  ### Construct process features for training images 
+  
+  ### Input: a list of images or fiducial points; index: train index or test index
+
+  ### Output: a data frame containing: features and a column of label
+  
+  ### here is an example of extracting pairwise distances between fiducial points
+  ### Step 1: Write a function pairwise_dist to calculate pairwise distance of items in a vector
+  pairwise_dist <- function(vec){
+    ### input: a vector(length n), output: a vector containing pairwise distances(length n(n-1)/2)
+    return(as.vector(dist(vec)))
+  }
+  
+  ### Step 2: Write a function pairwise_dist_result to apply function in Step 1 to column of a matrix 
+  pairwise_dist_result <-function(mat){
+    ### input: a n*2 matrix(e.g. fiducial_pt_list[[1]]), output: a vector(length n(n-1))
+    return(as.vector(apply(mat, 2, pairwise_dist))) 
+  }
+  
+  ### Step 3: Apply function in Step 2 to selected index of input list, output: a feature matrix with ncol = n(n-1) = 78*77 = 6006
+  pairwise_dist_feature <- t(sapply(input_list[index], pairwise_dist_result))
+  dim(pairwise_dist_feature) 
+  
+  ### Step 4: construct a dataframe containing features and label with nrow = length of index
+  ### column bind feature matrix in Step 3 and corresponding features
+  pairwise_data <- cbind(pairwise_dist_feature, info$emotion_idx[index])
+  ### add column names
+  colnames(pairwise_data) <- c(paste("feature", 1:(ncol(pairwise_data)-1), sep = ""), "emotion_idx")
+  ### convert matrix to data frame
+  pairwise_data <- as.data.frame(pairwise_data)
+  ### convert label column to factor
+  pairwise_data$emotion_idx <- as.factor(pairwise_data$emotion_idx)
+  
+  return(feature_df = pairwise_data)
+}
+
+```
+
+```{r}
+train <- function(feature_df = pairwise_data, par = NULL){
+  ### Train an SVM model using processed features from training images
+  
+  ### Input:
+  ### - a data frame containing features and labels
+  ### - a parameter list
+  ### Output: trained model
+  
+  ### load libraries
+  library("e1071")
+  
+  ### Train with SVM
+  if(is.null(par)){
+    gamma = 10^(-1)
+    cost = 1
+  } else {
+    gamma = par$gamma
+    cost = par$cost
+  }
+   svm_model <- svm(emotion_idx~., data = feature_df,
+                    kernel = "radial", gamma = gamma, cost = cost) 
+
+  return(model = svm_model)
+}
+
+
+```
+
+
+```{r}
+cv.function <- function(dat_train, K, gamma, cost){
+  ### Input:
+  ### - train data frame
+  ### - K: a number stands for K-fold CV
+  ### - tuning parameters 
+  
+  n <- dim(dat_train)[1]
+  n.fold <- round(n/K, 0)
+  set.seed(0)
+  s <- sample(rep(1:K, c(rep(n.fold, K-1), n-(K-1)*n.fold)))  
+  cv.error <- rep(NA, K)
+  
+  for (i in 1:K){
+    train.data <- dat_train[s != i,]
+    test.data <- dat_train[s == i,]
+  
+    par <- list(gamma = gamma, cost = cost)
+    fit <- train(train.data, par)
+    
+    pred <- test(fit, test.data)  
+    error <- mean(pred != test.data$categoryID) 
+    print(error)
+    cv.error[i] <- error
+    
+  }			
+  return(c(mean(cv.error),sd(cv.error)))
+}
+```
+
+```{r}
+test <- function(model, dat_test){
+  
+  ### Input: 
+  ###  - the fitted classification model using training data
+  ###  - processed features from testing images 
+  ### Output: training model specification
+  
+  ### load libraries
+  library("e1071")
+  
+  ### make predictions
+  pred <- predict(model, dat_test)
+  return(pred)
+}
+```
+############################################
+
+```{r}
+library("R.matlab")
+info <- read.csv("../data/train_set/label.csv")
+```
+
+```{r}
+fileList <- list.files("../data/train_set/points")
+fiducial_pt_list <- list()
+for(i in 1:length(fileList)){
+  mat <- readMat(paste0("../data/train_set/points/", fileList[i]))$faceCoordinatesUnwarped
+  fiducial_pt_list[[i]] <- mat
+}
+```
+
+```{r}
+pairwise_data <- feature(fiducial_pt_list, sample(c(100:400), 50))
+svm_model <- train(pairwise_data)
+test(svm_model, feature(fiducial_pt_list, sample(c(100:400), 20)))
+```
+
+
