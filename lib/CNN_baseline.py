@@ -89,41 +89,6 @@ from keras.callbacks import ModelCheckpoint
 from keras.optimizers import *
 from keras.layers.normalization import BatchNormalization
 
-def my_model():
-    model = Sequential()
-    input_shape = (75,100,3)
-    model.add(Conv2D(64, (5, 5), input_shape=input_shape,activation='relu', padding='same'))
-    model.add(Conv2D(64, (5, 5), activation='relu', padding='same'))
-    model.add(BatchNormalization())
-    model.add(MaxPooling2D(pool_size=(2, 2)))
-
-    model.add(Conv2D(128, (5, 5),activation='relu',padding='same'))
-    model.add(Conv2D(128, (5, 5),activation='relu',padding='same'))
-    model.add(BatchNormalization())
-    model.add(MaxPooling2D(pool_size=(2, 2)))
-
-    model.add(Conv2D(256, (3, 3),activation='relu',padding='same'))
-    model.add(Conv2D(256, (3, 3),activation='relu',padding='same'))
-    model.add(BatchNormalization())
-    model.add(MaxPooling2D(pool_size=(2, 2)))
-
-    model.add(Flatten())
-    model.add(Dense(128))
-    model.add(BatchNormalization())
-    model.add(Activation('relu'))
-    model.add(Dropout(0.2))
-    model.add(Dense(22))
-    model.add(Activation('softmax'))
-    
-    model.compile(loss='categorical_crossentropy', metrics=['accuracy'],optimizer='adam')
-    # UNCOMMENT THIS TO VIEW THE ARCHITECTURE
-    #model.summary()
-    
-    return model
-model=my_model()
-model.summary()
-
-
 '''train model'''
 def my_model():
     model = Sequential()
