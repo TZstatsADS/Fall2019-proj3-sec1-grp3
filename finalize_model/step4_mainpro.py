@@ -2,24 +2,20 @@
 # 10 crop for data enhancement
 from __future__ import print_function
 
-import torch
-import torch.nn as nn
+
 import torch.optim as optim
-import torch.nn.functional as F
-import torch.backends.cudnn as cudnn
-import torchvision
 import transforms as transforms
 import numpy as np
 import os
 import argparse
 import utils
+import time
 from SPLIT import SPLIT
-from torch.autograd import Variable
 from models import *
 
 parser = argparse.ArgumentParser(description='PyTorch Project3 CNN Training')
 parser.add_argument('--model', type=str, default='Resnet34', help='CNN architecture')
-parser.add_argument('--dataset', type=str, default='Project3', help='dataset')
+parser.add_argument('--dataset', type=str, default='finalize_model', help='dataset')
 parser.add_argument('--fold', default=1, type=int, help='k fold number')
 parser.add_argument('--bs', default=128, type=int, help='batch_size')
 parser.add_argument('--lr', default=0.01, type=float, help='learning rate')
@@ -27,7 +23,7 @@ parser.add_argument('--resume', '-r', action='store_true', help='resume from che
 opt = parser.parse_args()
 
 # use_cuda = torch.cuda.is_available()
-use_cuda = False
+use_cuda = True
 
 best_Test_acc = 0  # best PrivateTest accuracy
 best_Test_acc_epoch = 0
@@ -55,9 +51,9 @@ transform_test = transforms.Compose([
     transforms.Lambda(lambda crops: torch.stack([transforms.ToTensor()(crop) for crop in crops])),
 ])
 
-trainset = SPLIT(split = 'Training', fold = opt.fold, transform=transform_train)
+trainset = SPLIT(split='Training', fold = opt.fold, transform=transform_train)
 trainloader = torch.utils.data.DataLoader(trainset, batch_size=opt.bs, shuffle=True, num_workers=1)
-testset = SPLIT(split = 'Testing', fold = opt.fold, transform=transform_test)
+testset = SPLIT(split='Testing', fold = opt.fold, transform=transform_test)
 testloader = torch.utils.data.DataLoader(testset, batch_size=5, shuffle=False, num_workers=1)
 
 # Model
@@ -95,12 +91,14 @@ optimizer = optim.SGD(net.parameters(), lr=opt.lr, momentum=0.9, weight_decay=5e
 
 # Training
 def train(epoch):
+    since = time.time()
     print('\nEpoch: %d' % epoch)
     global Train_acc
     net.train()
     train_loss = 0
     correct = 0
     total = 0
+
 
     if epoch > learning_rate_decay_start and learning_rate_decay_start >= 0:
         frac = (epoch - learning_rate_decay_start) // learning_rate_decay_every
@@ -110,7 +108,6 @@ def train(epoch):
     else:
         current_lr = opt.lr
     print('learning_rate: %s' % str(current_lr))
-
 
     for batch_idx, (inputs, targets) in enumerate(trainloader):
         if use_cuda:
@@ -132,6 +129,8 @@ def train(epoch):
             % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
 
     Train_acc = 100.*correct/total
+    time_elapsed = time.time() - since
+    print('Testing complete in {:.0f}m {:.0f}s'.format(time_elapsed // 60, time_elapsed % 60))
     # print('Saving..')
     # # print("best_Test_acc: %0.3f" % Test_acc)
     # Test_acc = 100.*correct/total
@@ -151,6 +150,7 @@ def test(epoch):
     global Test_acc
     global best_Test_acc
     global best_Test_acc_epoch
+    since = time.time()
     net.eval()
     PrivateTest_loss = 0
     correct = 0
@@ -169,7 +169,7 @@ def test(epoch):
         PrivateTest_loss += loss.item()
         _, predicted = torch.max(outputs_avg.data, 1)
         total += targets.size(0)
-        correct += predicted.eq(targets.data).cpu().sum()
+        correct += predicted.eq(targets.data).cuda().sum()
 
         utils.progress_bar(batch_idx, len(testloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
             % (PrivateTest_loss / (batch_idx + 1), 100. * correct / total, correct, total))
@@ -190,13 +190,9 @@ def test(epoch):
         torch.save(state, os.path.join(path, 'Test_model.t7'))
         best_Test_acc = Test_acc
         best_Test_acc_epoch = epoch
-
-for epoch in range(start_epoch, total_epoch):
-    train(epoch)
-    test(epoch)
-
-print("best_Test_acc: %0.3f" % best_Test_acc)
-print("best_Test_acc_epoch: %d" % best_Test_acc_epoch)
+    time_elapsed = time.time() - since
+    print('Testing complete in {:.0f}m {:.0f}s'.format(
+        time_elapsed // 60, time_elapsed % 60))
 
 
 

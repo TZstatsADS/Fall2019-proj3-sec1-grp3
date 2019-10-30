@@ -5,12 +5,11 @@ import numpy as np
 
 
 class FaceCropper(object):
-    CASCADE_PATH = "/home/lingyi/Desktop/Project3/haarcascade_frontalface_default.xml"
+    CASCADE_PATH = "haarcascade_frontalface_default.xml"
 
     def __init__(self):
         print(self.CASCADE_PATH)
-        self.face_cascade = cv2.CascadeClassifier("/home/lingyi/Desktop/Project3/haarcascade_frontalface_default.xml"
-)
+        self.face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
         
 
     def generate(self, image_path, show_result=False, d = 0):
@@ -71,7 +70,7 @@ if __name__ == '__main__':
 
     # Test run the following code to see if the image is correctly chopped.
 
-    image_path = os.getcwd()+"\\0157.jpg"
+    # image_path = os.getcwd()+"\\0157.jpg"
     #print(os.getcwd())
 
     # if (argc != 2):
@@ -86,8 +85,8 @@ if __name__ == '__main__':
 
     # Start to perform chopping to your dataset by doing the following
 
-    image_path = "/home/lingyi/Desktop/finalize_model/data/all_data2500"
-    destination = "/home/lingyi/Desktop/finalize_model/data/data_0"
+    image_path = "data/test_images"
+    destination = "data/data_0"
     if not os.path.isdir(destination):
         os.makedirs(destination)
     if os.path.isdir(image_path):
