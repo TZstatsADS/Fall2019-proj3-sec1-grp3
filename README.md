@@ -8,11 +8,11 @@ Term: Fall 2019
 
 + Team ##
 + Team members
-	+ team member 1
-	+ team member 2
-	+ team member 3
-	+ team member 4
-	+ team member 5
+	+ Cai, Lingyi lc3352@columbia.edu
+	+ Li, Xiaotong xl2788@columbia.edu
+	+ Li, Yanan yl4062@columbia.edu
+	+ Ma, Yiwen ym2775@columbia.edu
+	+ Qiang, Runzi rq2156@columbia.edu
 
 + Project summary: In this project, we created a classification engine for facial emotion recognition. 
 	
