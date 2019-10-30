@@ -1,268 +1,317 @@
-Model: Project3_2500_VGG19
- [========== 20/20 ===========>.] | Loss: 0.885 | Acc: 67.160% (1679/2500)  
-
-Model:Project3_2500_Resnet
- [========== 20/20 ===========>.] | Loss: 0.701 | Acc: 75.080% (1877/2500) 
-
-Model:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Resnet18 
-Epoch: 1
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 2.558 | Acc: 17.120% (428/2500)                                                                                                                                                                                                                                            
-Saving..
-
-Epoch: 2
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 2.200 | Acc: 25.640% (641/2500)                                                                                                                                                                                                                                            
-Saving..
-
-Epoch: 3
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.978 | Acc: 31.920% (798/2500)                                                                                                                                                                                                                                            
-Saving..
-
-Epoch: 4
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.865 | Acc: 36.200% (905/2500)                                                                                                                                                                                                                                            
-Saving..
-
-Epoch: 5
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.802 | Acc: 38.400% (960/2500)                                                                                                                                                                                                                                            
-Saving..
-
-Epoch: 6
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.716 | Acc: 39.160% (979/2500)                                                                                                                                                                                                                                            
-Saving..
-
-Epoch: 7
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.665 | Acc: 41.200% (1030/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 8
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.611 | Acc: 43.200% (1080/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 9
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.584 | Acc: 44.040% (1101/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 10
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.507 | Acc: 46.120% (1153/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 11
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.532 | Acc: 45.320% (1133/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 12
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.451 | Acc: 48.400% (1210/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 13
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.388 | Acc: 49.480% (1237/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 14
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.357 | Acc: 51.000% (1275/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 15
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.353 | Acc: 51.360% (1284/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 16
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.314 | Acc: 52.840% (1321/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 17
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.270 | Acc: 53.720% (1343/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 18
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.278 | Acc: 54.360% (1359/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 19
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.279 | Acc: 54.680% (1367/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 20
-learning_rate: 0.01
- [========== 20/20 ===========>.] | Loss: 1.225 | Acc: 56.680% (1417/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 21
-learning_rate: 0.008
- [========== 20/20 ===========>.] | Loss: 1.158 | Acc: 58.720% (1468/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 22
-learning_rate: 0.006400000000000001
- [========== 20/20 ===========>.] | Loss: 1.078 | Acc: 61.480% (1537/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 23
-learning_rate: 0.005120000000000001
- [========== 20/20 ===========>.] | Loss: 1.057 | Acc: 61.400% (1535/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 24
-learning_rate: 0.004096000000000001
- [========== 20/20 ===========>.] | Loss: 1.011 | Acc: 63.680% (1592/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 25
-learning_rate: 0.0032768000000000007
- [========== 20/20 ===========>.] | Loss: 0.945 | Acc: 66.440% (1661/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 26
-learning_rate: 0.002621440000000001
- [========== 20/20 ===========>.] | Loss: 0.912 | Acc: 67.320% (1683/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 27
-learning_rate: 0.002097152000000001
- [========== 20/20 ===========>.] | Loss: 0.877 | Acc: 68.280% (1707/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 28
-learning_rate: 0.001677721600000001
- [========== 20/20 ===========>.] | Loss: 0.847 | Acc: 68.120% (1703/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 29
-learning_rate: 0.0013421772800000006
- [========== 20/20 ===========>.] | Loss: 0.834 | Acc: 69.800% (1745/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 30
-learning_rate: 0.0010737418240000006
- [========== 20/20 ===========>.] | Loss: 0.808 | Acc: 70.440% (1761/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 31
-learning_rate: 0.0008589934592000006
- [========== 20/20 ===========>.] | Loss: 0.780 | Acc: 71.640% (1791/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 32
-learning_rate: 0.0006871947673600004
- [========== 20/20 ===========>.] | Loss: 0.767 | Acc: 72.680% (1817/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 33
-learning_rate: 0.0005497558138880004
- [========== 20/20 ===========>.] | Loss: 0.763 | Acc: 72.520% (1813/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 34
-learning_rate: 0.00043980465111040037
- [========== 20/20 ===========>.] | Loss: 0.759 | Acc: 72.760% (1819/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 35
-learning_rate: 0.0003518437208883203
- [========== 20/20 ===========>.] | Loss: 0.750 | Acc: 72.840% (1821/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 36
-learning_rate: 0.00028147497671065624
- [========== 20/20 ===========>.] | Loss: 0.748 | Acc: 72.680% (1817/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 37
-learning_rate: 0.00022517998136852504
- [========== 20/20 ===========>.] | Loss: 0.741 | Acc: 72.880% (1822/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 38
-learning_rate: 0.00018014398509482002
- [========== 20/20 ===========>.] | Loss: 0.721 | Acc: 73.880% (1847/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 39
-learning_rate: 0.00014411518807585602
- [========== 20/20 ===========>.] | Loss: 0.723 | Acc: 74.040% (1851/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 40
-learning_rate: 0.00011529215046068484
- [========== 20/20 ===========>.] | Loss: 0.742 | Acc: 72.600% (1815/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 41
-learning_rate: 9.223372036854788e-05
- [========== 20/20 ===========>.] | Loss: 0.701 | Acc: 75.080% (1877/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 42
-learning_rate: 7.37869762948383e-05
- [========== 20/20 ===========>.] | Loss: 0.724 | Acc: 73.080% (1827/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 43
-learning_rate: 5.902958103587064e-05
- [========== 20/20 ===========>.] | Loss: 0.720 | Acc: 73.480% (1837/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 44
-learning_rate: 4.722366482869652e-05
- [========== 20/20 ===========>.] | Loss: 0.716 | Acc: 73.920% (1848/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 45
-learning_rate: 3.777893186295722e-05
- [========== 20/20 ===========>.] | Loss: 0.695 | Acc: 74.400% (1860/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 46
-learning_rate: 3.0223145490365776e-05
- [========== 20/20 ===========>.] | Loss: 0.729 | Acc: 73.800% (1845/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 47
-learning_rate: 2.417851639229262e-05
- [========== 20/20 ===========>.] | Loss: 0.715 | Acc: 73.640% (1841/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 48
-learning_rate: 1.9342813113834096e-05
- [========== 20/20 ===========>.] | Loss: 0.718 | Acc: 73.440% (1836/2500)                                                                                                                                                                                                                                           
-Saving..
-
-Epoch: 49
-learning_rate: 1.547425049106728e-05
- [========== 20/20 ===========>.] | Loss: 0.713 | Acc: 74.160% (1854/2500)     
+# packages in environment at /anaconda3/envs/research:
+#
+# Name                    Version                   Build  Channel
+_anaconda_depends         2019.03                  py37_0  
+alabaster                 0.7.12                   py37_0  
+anaconda                  custom                   py37_1  
+anaconda-client           1.7.2                    py37_0  
+anaconda-project          0.8.4                      py_0  
+appnope                   0.1.0                    py37_0  
+appscript                 1.1.0            py37h1de35cc_0  
+asn1crypto                1.2.0                    py37_0  
+astroid                   2.3.2                    py37_0  
+astropy                   3.2.2            py37h1de35cc_0  
+atomicwrites              1.3.0                    py37_1  
+attrs                     19.3.0                     py_0  
+babel                     2.7.0                      py_0  
+backcall                  0.1.0                    py37_0  
+backports                 1.0                        py_2  
+backports.os              0.1.1                    py37_0  
+backports.shutil_get_terminal_size 1.0.0                    py37_2  
+basemap                   1.2.0            py37h0acbc05_0  
+beautifulsoup4            4.8.1                    py37_0  
+bitarray                  1.0.1            py37h1de35cc_0  
+bkcharts                  0.2                      py37_0  
+blas                      1.0                         mkl  
+bleach                    3.1.0                    py37_0  
+blosc                     1.16.3               hd9629dc_0  
+bokeh                     1.3.4                    py37_0  
+boto                      2.49.0                   py37_0  
+bottleneck                1.2.1            py37h1d22016_1  
+bzip2                     1.0.8                h1de35cc_0  
+ca-certificates           2019.10.16                    0  
+cairo                     1.14.12              hc4e6be7_4  
+certifi                   2019.9.11                py37_0  
+cffi                      1.13.0           py37hb5b8e2f_0  
+chardet                   3.0.4                 py37_1003  
+click                     7.0                      py37_0  
+click-plugins             1.1.1                      py_0  
+cligj                     0.5.0                    py37_0  
+cloudpickle               1.2.2                      py_0  
+clyent                    1.2.2                    py37_1  
+colorama                  0.4.1                    py37_0  
+contextlib2               0.6.0                      py_0  
+cryptography              2.3.1            py37hdbc3d79_0  
+curl                      7.61.1               ha441bb4_0  
+cycler                    0.10.0                   py37_0  
+cython                    0.29.13          py37h0a44026_0  
+cytoolz                   0.10.0           py37h1de35cc_0  
+dask                      2.6.0                      py_0  
+dask-core                 2.6.0                      py_0  
+dbus                      1.13.12              h90a0687_0  
+decorator                 4.4.0                    py37_1  
+defusedxml                0.6.0                      py_0  
+distributed               2.6.0                      py_0  
+docutils                  0.15.2                   py37_0  
+entrypoints               0.3                      py37_0  
+et_xmlfile                1.0.1                    py37_0  
+expat                     2.2.6                h0a44026_0  
+fastcache                 1.1.0            py37h1de35cc_0  
+ffmpeg                    4.0                  h01ea3c9_0  
+filelock                  3.0.12                     py_0  
+fiona                     1.8.4           py37h8e9a8e4_1001    conda-forge
+flask                     1.1.1                      py_0  
+fontconfig                2.13.0               h5d5b041_1  
+freetype                  2.9.1                hb4e5f40_0  
+freexl                    1.0.5                h1de35cc_0  
+fsspec                    0.5.2                      py_0  
+gdal                      2.3.2            py37h3f5b778_0  
+geos                      3.6.2                h5470d99_2  
+get_terminal_size         1.0.0                h7520d66_0  
+gettext                   0.19.8.1             h15daf44_3  
+gevent                    1.4.0            py37h1de35cc_0  
+giflib                    5.1.4                h1de35cc_1  
+glib                      2.56.2               hd9629dc_0  
+glob2                     0.7                        py_0  
+gmp                       6.1.2                hb37e062_1  
+gmpy2                     2.0.8            py37h6ef4df4_2  
+graphite2                 1.3.13               h2098e52_0  
+greenlet                  0.4.15           py37h1de35cc_0  
+h5py                      2.8.0            py37h878fce3_3  
+harfbuzz                  1.8.8                hb8d4a28_0  
+hdf4                      4.2.13               h39711bb_2  
+hdf5                      1.10.2               hfa1e0ec_1  
+heapdict                  1.0.1                      py_0  
+html5lib                  1.0.1                    py37_0  
+icu                       58.2                 h4b95b61_1  
+idna                      2.8                      py37_0  
+imageio                   2.6.1                    py37_0  
+imagesize                 1.1.0                    py37_0  
+importlib_metadata        0.23                     py37_0  
+intel-openmp              2019.4                      233  
+ipykernel                 5.1.2            py37h39e3cac_0  
+ipython                   7.8.0            py37h39e3cac_0  
+ipython_genutils          0.2.0                    py37_0  
+ipywidgets                7.5.1                      py_0  
+isort                     4.3.21                   py37_0  
+itsdangerous              1.1.0                    py37_0  
+jasper                    2.0.14               h636a363_1  
+jbig                      2.1                  h4d881f8_0  
+jdcal                     1.4.1                      py_0  
+jedi                      0.15.1                   py37_0  
+jinja2                    2.10.3                     py_0  
+joblib                    0.13.2                   py37_0  
+jpeg                      9b                   he5867d9_2  
+json-c                    0.13.1               h3efe00b_0  
+json5                     0.8.5                      py_0  
+jsonschema                3.1.1                    py37_0  
+jupyter                   1.0.0                    py37_7  
+jupyter_client            5.3.4                    py37_0  
+jupyter_console           6.0.0                    py37_0  
+jupyter_core              4.6.0                    py37_0  
+jupyterlab                1.1.4              pyhf63ae98_0  
+jupyterlab_server         1.0.6                      py_0  
+kealib                    1.4.7                h40e48e4_6  
+keyring                   18.0.0                   py37_0  
+kiwisolver                1.1.0            py37h0a44026_0  
+krb5                      1.16.1               h24a3359_6  
+lazy-object-proxy         1.4.2            py37h1de35cc_0  
+libarchive                3.3.3                h786848e_5  
+libboost                  1.67.0               hebc422b_4  
+libcurl                   7.61.1               hf30b1f0_0  
+libcxx                    4.0.1                hcfea43d_1  
+libcxxabi                 4.0.1                hcfea43d_1  
+libdap4                   3.19.1               h3d3e54a_0  
+libedit                   3.1.20181209         hb402a30_0  
+libffi                    3.2.1                         1    bioconda
+libgdal                   2.3.2                h7b1ea53_0  
+libgfortran               3.0.1                h93005f0_2  
+libiconv                  1.15                 hdd342a3_7  
+libkml                    1.3.0                hbe12b63_4  
+liblief                   0.9.0                h2a1bed3_2  
+libnetcdf                 4.6.1                h4e6abe9_2  
+libopencv                 3.4.2                h7c891bd_1  
+libopus                   1.3                  h1de35cc_0  
+libpng                    1.6.37               ha441bb4_0  
+libpq                     10.5                 hf30b1f0_0  
+libsodium                 1.0.16               h3efe00b_0  
+libspatialite             4.3.0a              ha12ebda_19  
+libssh2                   1.8.0                h322a93b_4  
+libtiff                   4.0.10               hcb84e12_2  
+libvpx                    1.7.0                h378b8a2_0  
+libxml2                   2.9.9                hf6e021a_1  
+libxslt                   1.1.33               h33a18ac_0  
+llvm-openmp               4.0.1                hcfea43d_1  
+llvmlite                  0.30.0           py37h98b8051_0  
+locket                    0.2.0                    py37_1  
+lxml                      4.4.1            py37hef8c89e_0  
+lz4-c                     1.8.1.2              h1de35cc_0  
+lzo                       2.10                 h362108e_2  
+markupsafe                1.1.1            py37h1de35cc_0  
+matplotlib                3.1.1            py37h54f8f79_0  
+matplotlib-base           3.1.1            py37h3a684a6_1    conda-forge
+mccabe                    0.6.1                    py37_1  
+mistune                   0.8.4            py37h1de35cc_0  
+mkl                       2019.4                      233  
+mkl-service               2.3.0            py37hfbe908c_0  
+mkl_fft                   1.0.14           py37h5e564d8_0  
+mkl_random                1.1.0            py37ha771720_0  
+mock                      3.0.5                    py37_0  
+more-itertools            7.2.0                    py37_0  
+mpc                       1.1.0                h6ef4df4_1  
+mpfr                      4.0.1                h3018a27_3  
+mpmath                    1.1.0                    py37_0  
+msgpack-python            0.6.1            py37h04f5b5a_1  
+multipledispatch          0.6.0                    py37_0  
+munch                     2.3.2                    py37_0  
+nbconvert                 5.6.0                    py37_1  
+nbformat                  4.4.0                    py37_0  
+ncurses                   6.1                  h0a44026_1  
+networkx                  2.4                        py_0  
+ninja                     1.9.0            py37h04f5b5a_0  
+nltk                      3.4.5                    py37_0  
+nose                      1.3.7                    py37_2  
+notebook                  6.0.1                    py37_0  
+numba                     0.46.0           py37h6440ff4_0  
+numexpr                   2.7.0            py37h7413580_0  
+numpy                     1.17.2           py37h99e6662_0  
+numpy-base                1.17.2           py37h6575580_0  
+numpydoc                  0.9.1                      py_0  
+olefile                   0.46                     py37_0  
+openblas                  0.2.19                        2    conda-forge
+opencv                    3.4.2            py37h6fd60c2_1  
+openjpeg                  2.3.0                hb95cd4c_1  
+openpyxl                  3.0.0                      py_0  
+openssl                   1.0.2t               h1de35cc_1  
+packaging                 19.2                       py_0  
+pandas                    0.25.2           py37h0a44026_0  
+pandoc                    2.2.3.2                       0  
+pandocfilters             1.4.2                    py37_1  
+parso                     0.5.1                      py_0  
+partd                     1.0.0                      py_0  
+path.py                   12.0.1                     py_0  
+pathlib2                  2.3.5                    py37_0  
+patsy                     0.5.1                    py37_0  
+pcre                      8.43                 h0a44026_0  
+pep8                      1.7.1                    py37_0  
+pexpect                   4.7.0                    py37_0  
+pickleshare               0.7.5                    py37_0  
+pillow                    6.2.0            py37hb68e598_0  
+pip                       19.3.1                   py37_0  
+pixman                    0.38.0               h1de35cc_0  
+pkginfo                   1.5.0.1                  py37_0  
+pluggy                    0.13.0                   py37_0  
+ply                       3.11                     py37_0  
+poppler                   0.65.0               ha097c24_1  
+poppler-data              0.4.9                         0  
+proj4                     5.0.1                h1de35cc_0  
+prometheus_client         0.7.1                      py_0  
+prompt_toolkit            2.0.10                     py_0  
+psutil                    5.6.3            py37h1de35cc_0  
+ptyprocess                0.6.0                    py37_0  
+py                        1.8.0                    py37_0  
+py-lief                   0.9.0            py37h1413db1_2  
+py-opencv                 3.4.2            py37h7c891bd_1  
+pycodestyle               2.5.0                    py37_0  
+pycosat                   0.6.3            py37h1de35cc_0  
+pycparser                 2.19                     py37_0  
+pycrypto                  2.6.1            py37h1de35cc_9  
+pycurl                    7.43.0.2         py37hdbc3d79_0  
+pyflakes                  2.1.1                    py37_0  
+pygments                  2.4.2                      py_0  
+pylint                    2.4.3                    py37_0  
+pyodbc                    4.0.27           py37h0a44026_0  
+pyopenssl                 19.0.0                   py37_0  
+pyparsing                 2.4.2                      py_0  
+pyproj                    1.9.5.1          py37h833a5d7_1  
+pyqt                      5.9.2            py37h655552a_2  
+pyrsistent                0.15.4           py37h1de35cc_0  
+pyshp                     2.1.0                      py_0  
+pysocks                   1.7.1                    py37_0  
+pytables                  3.4.4            py37h13cba08_0  
+pytest                    5.2.1                    py37_0  
+pytest-arraydiff          0.3              py37h39e3cac_0  
+pytest-astropy            0.5.0                    py37_0  
+pytest-doctestplus        0.4.0                      py_0  
+pytest-openfiles          0.4.0                      py_0  
+pytest-remotedata         0.3.2                    py37_0  
+python                    3.7.0                hc167b69_0  
+python-dateutil           2.8.0                    py37_0  
+python-libarchive-c       2.8                     py37_13  
+python.app                2                        py37_9  
+pytorch                   1.3.0                   py3.7_0    pytorch
+pytz                      2019.3                     py_0  
+pywavelets                1.0.3            py37h1d22016_1  
+pyyaml                    5.1.2            py37h1de35cc_0  
+pyzmq                     18.1.0           py37h0a44026_0  
+qt                        5.9.7                h468cd18_1  
+qtawesome                 0.6.0                      py_0  
+qtconsole                 4.5.5                      py_0  
+qtpy                      1.9.0                      py_0  
+readline                  7.0                  h1de35cc_5  
+requests                  2.22.0                   py37_0  
+rope                      0.14.0                     py_0  
+ruamel_yaml               0.15.46          py37h1de35cc_0  
+scikit-image              0.15.0           py37h0a44026_0  
+scikit-learn              0.21.3           py37h27c97d8_0  
+scipy                     1.3.1            py37h1410ff5_0  
+seaborn                   0.9.0                    py37_0  
+send2trash                1.5.0                    py37_0  
+setuptools                41.4.0                   py37_0  
+shapely                   1.6.4            py37h20de77a_0  
+simplegeneric             0.8.1                    py37_2  
+singledispatch            3.4.0.3                  py37_0  
+sip                       4.19.8           py37h0a44026_0  
+six                       1.12.0                   py37_0  
+snappy                    1.1.7                he62c110_3  
+snowballstemmer           2.0.0                      py_0  
+sortedcollections         1.1.2                    py37_0  
+sortedcontainers          2.1.0                    py37_0  
+soupsieve                 1.9.3                    py37_0  
+sphinx                    2.2.0                      py_0  
+sphinxcontrib             1.0                      py37_1  
+sphinxcontrib-applehelp   1.0.1                      py_0  
+sphinxcontrib-devhelp     1.0.1                      py_0  
+sphinxcontrib-htmlhelp    1.0.2                      py_0  
+sphinxcontrib-jsmath      1.0.1                      py_0  
+sphinxcontrib-qthelp      1.0.2                      py_0  
+sphinxcontrib-serializinghtml 1.1.3                      py_0  
+sphinxcontrib-websupport  1.1.2                      py_0  
+spyder                    3.3.6                    py37_0  
+spyder-kernels            0.5.2                    py37_0  
+sqlalchemy                1.3.10           py37h1de35cc_0  
+sqlite                    3.30.1               ha441bb4_0  
+statsmodels               0.10.1           py37h1d22016_0  
+sympy                     1.4                      py37_0  
+tbb                       2019.8               h04f5b5a_0  
+tblib                     1.4.0                      py_0  
+terminado                 0.8.2                    py37_0  
+testpath                  0.4.2                    py37_0  
+tk                        8.6.8                ha441bb4_0  
+toolz                     0.10.0                     py_0  
+torchvision               0.4.1                  py37_cpu    pytorch
+tornado                   6.0.3            py37h1de35cc_0  
+tqdm                      4.36.1                     py_0  
+traitlets                 4.3.3                    py37_0  
+unicodecsv                0.14.1                   py37_0  
+unixodbc                  2.3.7                h1de35cc_0  
+urllib3                   1.24.2                   py37_0  
+wcwidth                   0.1.7                    py37_0  
+webencodings              0.5.1                    py37_1  
+werkzeug                  0.16.0                     py_0  
+wheel                     0.33.6                   py37_0  
+widgetsnbextension        3.5.1                    py37_0  
+wrapt                     1.11.2           py37h1de35cc_0  
+wurlitzer                 1.0.3                    py37_0  
+xerces-c                  3.2.2                h44e365a_0  
+xlrd                      1.2.0                    py37_0  
+xlsxwriter                1.2.2                      py_0  
+xlwings                   0.16.0                   py37_0  
+xlwt                      1.3.0                    py37_0  
+xz                        5.2.4                h1de35cc_4  
+yaml                      0.1.7                hc338f04_2  
+zeromq                    4.3.1                h0a44026_3  
+zict                      1.0.0                      py_0  
+zipp                      0.6.0                      py_0  
+zlib                      1.2.11               h1de35cc_3  
+zstd                      1.3.7                h5bba6e5_0 
