@@ -14,7 +14,7 @@ Term: Fall 2019
 	+ Ma, Yiwen ym2775@columbia.edu
 	+ Qiang, Runzi rq2156@columbia.edu
 
-+ Project summary: In this project, we created a classification engine for facial emotion recognition. For the baseline model gbm, we used feature.mat as the data set and the final accuracy was 32%. For the final model, we used the raw images as data input. Data alignment,augmentation and nomalization are used for data preprocessing. We've tried several deep neural network models and the final architecture we used for testing is VGG19, ResNet 18 and 34. We used 10-fold cross validation and the average accuracy reached 65%. For furture work, we can add local data augmentation on low accuracy classes, such as Hatred and Sadly disgusted, increase the image size, and add landmarks when training models.
++ Project summary: In this project, we created a classification engine for facial emotion recognition. For the baseline model gbm, the input data set was feature.mat the final accuracy was 32%. For the final model, raw images are used as data input. Data detection, alignment and augmentation are used for data preprocessing. Several deep neural network models were implemented and final architectures used for testing are VGG19, ResNet 18 and 34. 10-fold cross validation is implemented and the average accuracy reached 65%. For furture work, we can have more local data augmentation on low accuracy classes, increase  the image size, and add landmarks in training models.
 
 	
 **Contribution statement**: ([default](doc/a_note_on_contributions.md)) All team members contributed equally in all stages of this project. All team members approve our work presented in this GitHub repository including this contributions statement. 
