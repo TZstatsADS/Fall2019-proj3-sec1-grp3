@@ -15,6 +15,6 @@ Project 2 Facial Expression Recognition
 
 Team members: Lingyi Cai, Yanan Li, Xiaotong Li, Yiwen Ma, Runzi Qiang
 
-Summary: In this project, we developed a new method and improved the classification accuracy for images of cats and dogs to 99.9%
+Summary: In this project, we experimented on several models on facial expression image datasets, such as GBM, Random Forest and CNN. For CNN, we experimented popular architecture including resnet18, resnet34, vgg16, vgg19. We increased our accuracy from 30% to 70% by using Resnet34, however we decide to use resnet18 because it is more lightweight and yield very good results.
 
 [Contribution Statement] AB, CD, EF and GH designed the study. AB and CD developed baseline classification model for evaluation. EF and GH explored feature engineering for improving the baseline model. AB, EF and GH discussed and designed the model evaluation protocol. CD carried out the computation for model evaluation. All team members contributed to the GitHub repository and prepared the presentation. All team members approve our work presented in our GitHub repository including this contribution statement.
