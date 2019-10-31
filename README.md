@@ -20,12 +20,12 @@ Term: Fall 2019
 	
 **Contribution statement**: 
 
-LC applied advanced deep learning models, using images as our input instead of fiducial features. LC preprocessed images and built the deep learning models (VGG19, ResNet18, ResNet34).
-
-XL
-YL
-YM
-RQ
+LC applied advanced deep learning models, using images as our input instead of fiducial features. LC preprocessed images and built the deep learning models (VGG19, ResNet18, ResNet34, ResNet50).
+please add contribution statement
+XL:
+YL:
+YM:
+RQ:
 
 
 ```
