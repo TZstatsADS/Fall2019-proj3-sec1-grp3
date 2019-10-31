@@ -24,8 +24,7 @@ class FaceCropper(object):
         print("Detected faces: %d" % facecnt)
 
         if (faces is None):
-            print('Failed to detect face')
-            return 0
+            return faces
         elif len(faces) > 1:
             eval = []
 
@@ -70,7 +69,7 @@ if __name__ == '__main__':
 
     # Test run the following code to see if the image is correctly chopped.
 
-    # image_path = os.getcwd()+"\\0157.jpg"
+    # image_path = os.getcwd()+"\\0530.jpg"
     #print(os.getcwd())
 
     # if (argc != 2):
@@ -79,6 +78,7 @@ if __name__ == '__main__':
 
     # faceDetector = FaceCropper()
     # img = faceDetector.generate(image_path, show_result=False, d=30)
+    # print(img)
     # cv2.imwrite('image.jpg',img)
     # img = faceDetector.generate(image_path, show_result=False)
     # cv2.imwrite('image2.jpg', img)
@@ -92,9 +92,17 @@ if __name__ == '__main__':
     if os.path.isdir(image_path):
         file_names = glob.glob(image_path+"/*.jpg")
         faceDetector = FaceCropper()
-        for name in file_names:
+        for i in range(len(file_names)):
+            name = file_names[i]
             print(name)
             result = faceDetector.generate(name)
-            resname = destination + "/" + os.path.basename(name)
-            cv2.imwrite(resname,result)
+            if result is None:
+                result = faceDetector.generate(file_names[i + 1])
+                resname = destination + "/" + os.path.basename(name)
+                cv2.imwrite(resname, result)
+
+            else:
+                resname = destination + "/" + os.path.basename(name)
+                cv2.imwrite(resname, result)
+
         print("The Face Chopping is done!")
