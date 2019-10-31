@@ -20,7 +20,13 @@ Term: Fall 2019
 	
 **Contribution statement**: 
 
-Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
+LC applied advanced deep learning models, using images as our input instead of fiducial features. LC preprocessed images and built the deep learning models (VGG19, ResNet18, ResNet34).
+
+XL
+YL
+YM
+RQ
+
 
 ```
 proj/
