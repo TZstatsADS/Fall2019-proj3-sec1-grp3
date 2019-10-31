@@ -28,7 +28,11 @@ LC applied advanced deep learning models, using images as our input instead of f
 please add contribution statement
 XL:
 YL:
-YM:
++YM:
+Improved data augmentation function
+Run random forest and knn model
+Built CNN based on fiducial festure
+
 RQ:
 
 
