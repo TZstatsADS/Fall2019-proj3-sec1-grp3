@@ -1,4 +1,8 @@
 # Project: Can you recognize the emotion from an image of a face? 
+
+**Please run `main.py` in the doc folder. <br>**
+
+
 <img src="figs/CE.jpg" alt="Compound Emotions" width="500"/>
 (Image source: https://www.pnas.org/content/111/15/E1454)
 
