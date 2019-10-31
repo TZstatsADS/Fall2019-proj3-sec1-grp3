@@ -13,13 +13,19 @@ Project Description: In this project, we will carry out model evaluation and sel
 
 **Important:** Trained models have already saved in `/finalize_model/trained_models` folder, so users don't have to train them again. You can use the pretrained models to predict the images. 
 
+***
+**If you want to predict a bunch of new images:" <br>
+
+Please run `Just_predict_main.py`. 
+
+
+
+***
 **If you want to train the models:**
 
 ## Phrase 0: Environment Setup
 To replicate the result, please check the environment set up file to correctly set up the pytorch environment.
-Phrase one: Model Preparation <br>
-In this step, we will be doing offline data augmentation. Which includes face detection, facial landmark extraction, face cropping, and width, height, shift, horizaontal flip, zooming and brightness change. <br>
-Your images should be in `/finalize_model/data/test_images` folder. 
+
 
 ## Phrase 1: Data pre-processing 
 In this step, we will be doing offline data augmentation. Which includes face detection, facial landmark extraction, face cropping, and width, height, shift, horizaontal flip, zooming and brightness change.<br>
