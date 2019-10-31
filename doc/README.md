@@ -11,9 +11,7 @@ All the scripts and data are in the `Fall2019-proj3-sec1--proj3-sec1-grp3/finali
 
 Project Description: In this project, we will carry out model evaluation and selection for predictive analytics on image data. As data scientists, we often need to evaluate different modeling/analysis strategies and decide what is the best. Such decisions need to be supported by sound evidence in the form of model assessment, validation and comparison. In addition, we also need to communicate our decision and supporting evidence clearly and convincingly in an accessible fashion.
 
-**Important** Trained models have already saved in `/finalize_model/trained_models` folder, so users don't have to train them again. The training model provided by the following command is using VGG19. 
-
-You can use the pretrained models to predict the images. 
+**Important:** Trained models have already saved in `/finalize_model/trained_models` folder, so users don't have to train them again. You can use the pretrained models to predict the images. 
 
 **If you want to train the models:**
 
