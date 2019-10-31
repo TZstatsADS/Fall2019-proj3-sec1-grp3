@@ -24,11 +24,12 @@ Term: Fall 2019
 	
 **Contribution statement**: 
 
-+ LC applied advanced deep learning models, using images as our input instead of fiducial features. LC preprocessed images and built the deep learning models (VGG19, ResNet18, ResNet34, ResNet50).
-+ XL:
-+ YL:
-+ YM: Improved data augmentation function and built into python class. Run random forest and knn model. Built convolutional neural network based on fiducial festures. 
-+ RQ:
++ Cai, Lingyi: Applied advanced deep learning models, using images as our input instead of fiducial features. LC preprocessed images and built the deep learning models (VGG19, ResNet18, ResNet34, ResNet50).
++ Li, Xiaotong:
++ Li, Yanan: Built the baseline GBM Model and run it. Test the deep leaning models  (VGG19, ResNet18, ResNet34). 
++ Ma, Yiwen: Improved data augmentation function and built into python class. Run random forest and knn model. Built convolutional neural network based on fiducial festures. 
++ Qiang, Runzi: Croped the face and improved data augmentation， trained 6 layers CNN model. Modified the main.py and tested the deep leaning models  (VGG19, ResNet18, ResNet34)
+
 
 
 ```
