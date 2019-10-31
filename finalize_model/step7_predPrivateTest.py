@@ -19,8 +19,9 @@ import time
 import glob
 total_since = time.time()
 
+path = os.getcwd()
 
-read_path = "data/data_1"
+read_path = path + "/data/data_1"
 # data = pd.read_csv("data/label/label.csv")
 # emotion_idx = data['emotion_idx']
 file_list = sorted(os.listdir(read_path))
@@ -32,14 +33,14 @@ transform_test = transforms.Compose([
 ])
 
 device = torch.device('cpu')
-# net = VGG('VGG19')
-net = ResNet(BasicBlock, [2,2,2,2]) #18
+net = VGG('VGG19')
+# net = ResNet(BasicBlock, [2,2,2,2]) #18
 # net = ResNet(BasicBlock, [3,4,6,3]) #34
 
 # for i in range(10):
 
 # checkpoint = torch.load('/home/lingyi/Desktop/finalize_model/Project3_VGG19/' + str(i + 1) + '/Test_model.t7', map_location=device)
-checkpoint = torch.load('trained_models/Project3_2500_Resnet18/Test_model.t7', map_location=device)
+checkpoint = torch.load(path + '/trained_models/finalize_model_VGG19/1/Test_model.t7', map_location=device)
 net.load_state_dict(checkpoint['net'].state_dict())
 # net.cuda()
 

@@ -14,7 +14,7 @@ from SPLIT import SPLIT
 from models import *
 
 parser = argparse.ArgumentParser(description='PyTorch Project3 CNN Training')
-parser.add_argument('--model', type=str, default='Resnet34', help='CNN architecture')
+parser.add_argument('--model', type=str, default='VGG19', help='CNN architecture')
 parser.add_argument('--dataset', type=str, default='finalize_model', help='dataset')
 parser.add_argument('--fold', default=1, type=int, help='k fold number')
 parser.add_argument('--bs', default=128, type=int, help='batch_size')
@@ -23,7 +23,7 @@ parser.add_argument('--resume', '-r', action='store_true', help='resume from che
 opt = parser.parse_args()
 
 # use_cuda = torch.cuda.is_available()
-use_cuda = True
+use_cuda = False
 
 best_Test_acc = 0  # best PrivateTest accuracy
 best_Test_acc_epoch = 0
@@ -37,6 +37,11 @@ cut_size = 44
 total_epoch = 40
 
 path = os.path.join(opt.dataset + '_' + opt.model, str(opt.fold))
+folder_path = os.getcwd() 
+path = folder_path + "/trained_models/"+path
+
+if not os.path.isdir(folder_path + "/trained_models/"):
+    os.makedirs(folder_path + "/trained_models/")
 print(path)
 # Data
 print('==> Preparing data..')
@@ -197,3 +202,9 @@ def test(epoch):
 
 
 
+for epoch in range(start_epoch, total_epoch):
+    train(epoch)
+    test(epoch)
+
+print("best_Test_acc: %0.3f" % best_Test_acc)
+print("best_Test_acc_epoch: %d" % best_Test_acc_epoch)

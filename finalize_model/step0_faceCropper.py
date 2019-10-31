@@ -3,6 +3,8 @@ import glob
 import os
 import numpy as np
 
+# print(sys.path)
+# os.chdir('/home/lingyi/Desktop/repo/Fall2019-proj3-sec1--proj3-sec1-grp3/finalize_model')
 
 class FaceCropper(object):
     CASCADE_PATH = "haarcascade_frontalface_default.xml"
@@ -84,9 +86,12 @@ if __name__ == '__main__':
     # cv2.imwrite('image2.jpg', img)
 
     # Start to perform chopping to your dataset by doing the following
-
-    image_path = "data/test_images"
-    destination = "data/data_0"
+    
+    
+    image_path = "./data/test_images"
+    if not os.path.exists('./data/data_0'):
+        os.makedirs('./data/data_0')
+    destination = "./data/data_0"
     if not os.path.isdir(destination):
         os.makedirs(destination)
     if os.path.isdir(image_path):

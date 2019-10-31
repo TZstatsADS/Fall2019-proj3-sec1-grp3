@@ -3,7 +3,9 @@ from PIL import Image
 import numpy as np
 import h5py
 import torch.utils.data as data
-
+import os
+path = os.getcwd() 
+h5_path = path + '/data/h5/data.h5'
 
 class SPLIT(data.Dataset):
     """`SPLIT Dataset.
@@ -24,7 +26,7 @@ class SPLIT(data.Dataset):
         self.transform = transform
         self.split = split  # training set or test set
         self.fold = fold # the k-fold cross validation
-        self.data = h5py.File('/home/lingyi/Desktop/finalize_model/data/h5/cropped_72_48.h5', 'r', driver='core')
+        self.data = h5py.File(h5_path, 'r', driver='core')
 
         number = len(self.data['data_label']) #2250
 

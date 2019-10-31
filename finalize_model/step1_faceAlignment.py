@@ -10,11 +10,11 @@ import os
 import glob
 
 class FaceCropper(object):
-    CASCADE_PATH = "haarcascade_frontalface_default.xml"
+    CASCADE_PATH = "./haarcascade_frontalface_default.xml"
 
     def __init__(self):
         print(self.CASCADE_PATH)
-        self.face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml"
+        self.face_cascade = cv2.CascadeClassifier("./haarcascade_frontalface_default.xml"
 )
         
 
@@ -242,8 +242,8 @@ def image_padding(im_pth):
 
 if __name__=='__main__':
     desired_size = 72
-    image_path = "data/data_0"
-    destination = "data/data_1"
+    image_path = "./data/data_0"
+    destination = "./data/data_1"
     if not os.path.isdir(destination):
         os.makedirs(destination)
     if os.path.isdir(image_path):
