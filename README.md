@@ -28,7 +28,7 @@ Term: Fall 2019
 + Li, Xiaotong:
 + Li, Yanan: Built the baseline GBM Model and run it. Test the deep leaning models  (VGG19, ResNet18, ResNet34). 
 + Ma, Yiwen: Improved data augmentation function and built into python class. Run random forest and knn model. Built convolutional neural network based on fiducial festures. 
-+ Qiang, Runzi: Croped the face and improved data augmentation， trained 6 layers CNN model. Modified the main.py and tested the deep leaning models  (VGG19, ResNet18, ResNet34)
++ Qiang, Runzi: Croped the face and improved data augmentation, trained 6 layers CNN model. Modified the main.py and tested the deep leaning models  (VGG19, ResNet18, ResNet34)
 
 
 
