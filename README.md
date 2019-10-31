@@ -6,7 +6,7 @@
 
 Term: Fall 2019
 
-+ Team ##
++ Team 3
 + Team members
 	+ Cai, Lingyi lc3352@columbia.edu
 	+ Li, Xiaotong xl2788@columbia.edu
