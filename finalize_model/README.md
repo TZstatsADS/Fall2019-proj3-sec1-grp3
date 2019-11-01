@@ -19,7 +19,7 @@ Project Description: In this project, we will carry out model evaluation and sel
 **If you want to train the models:**
 
 ## Phrase 0: Environment Setup
-To replicate the result, please check the environment set up file to correctly set up the pytorch environment.
+To replicate the result, please check the environment set up list below to correctly set up the pytorch environment.
 
 
 ## Phrase 1: Data pre-processing 
