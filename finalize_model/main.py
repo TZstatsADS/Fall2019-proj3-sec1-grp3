@@ -1,6 +1,6 @@
 import os
 
-your_path = "/home/lingyi/Desktop/repo/Fall2019-proj3-sec1--proj3-sec1-grp3/finalize_model"
+your_path = "/Users/carol/Desktop/Fall2019-proj3-sec1-grp3/finalize_model"
 os.chdir(your_path)
 
 
