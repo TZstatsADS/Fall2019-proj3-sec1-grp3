@@ -8,14 +8,13 @@ from collections import defaultdict
 import numpy as np
 import os
 import glob
-
+path = os.getcwd()
 class FaceCropper(object):
-    CASCADE_PATH = "./haarcascade_frontalface_default.xml"
+    CASCADE_PATH = path + "/haarcascade_frontalface_default.xml"
 
     def __init__(self):
         print(self.CASCADE_PATH)
-        self.face_cascade = cv2.CascadeClassifier("./haarcascade_frontalface_default.xml"
-)
+        self.face_cascade = cv2.CascadeClassifier(path + "/haarcascade_frontalface_default.xml")
         
 
     def generate(self, img, show_result=False, d = 0):
@@ -242,8 +241,8 @@ def image_padding(im_pth):
 
 if __name__=='__main__':
     desired_size = 72
-    image_path = "./data/data_0"
-    destination = "./data/data_1"
+    image_path = path + "/data/data_0"
+    destination = path + "/data/data_1"
     if not os.path.isdir(destination):
         os.makedirs(destination)
     if os.path.isdir(image_path):
@@ -259,4 +258,4 @@ if __name__=='__main__':
             
             resname = destination + "/" + os.path.basename(name)
             cv2.imwrite(resname,face)
-        print("The Face Chopping Step 1 is done!")
+        print("The Face Alignment Step 1 is done!")

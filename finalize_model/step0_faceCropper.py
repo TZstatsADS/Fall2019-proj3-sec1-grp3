@@ -3,15 +3,14 @@ import glob
 import os
 import numpy as np
 
-# print(sys.path)
-# os.chdir('/home/lingyi/Desktop/repo/Fall2019-proj3-sec1--proj3-sec1-grp3/finalize_model')
+path = os.getcwd()
 
 class FaceCropper(object):
-    CASCADE_PATH = "haarcascade_frontalface_default.xml"
+    CASCADE_PATH = path + "/haarcascade_frontalface_default.xml"
 
     def __init__(self):
         print(self.CASCADE_PATH)
-        self.face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+        self.face_cascade = cv2.CascadeClassifier(path + "/haarcascade_frontalface_default.xml")
         
 
     def generate(self, image_path, show_result=False, d = 0):
@@ -88,10 +87,10 @@ if __name__ == '__main__':
     # Start to perform chopping to your dataset by doing the following
     
     
-    image_path = "./data/test_images"
-    if not os.path.exists('./data/data_0'):
-        os.makedirs('./data/data_0')
-    destination = "./data/data_0"
+    image_path = path + "/data/test_images"
+    if not os.path.exists(path + '/data/data_0'):
+        os.makedirs(path + '/data/data_0')
+    destination = path + "/data/data_0"
     if not os.path.isdir(destination):
         os.makedirs(destination)
     if os.path.isdir(image_path):

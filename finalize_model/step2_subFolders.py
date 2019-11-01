@@ -2,15 +2,15 @@ import os
 from PIL import Image
 import numpy as np
 import cv2 as cv
+path = os.getcwd()
 
+read_path = path + "/data/data_1"
 
-read_path = "./data/data_1"
-
-save_path = './data/data_2'
+save_path = path + '/data/data_2'
 if not os.path.isdir(save_path):
     os.makedirs(save_path)
 import pandas as pd 
-data = pd.read_csv("./data/label/label.csv") 
+data = pd.read_csv(path + "/data/label/label.csv") 
 file_list = sorted(os.listdir(read_path))
 emotion_idx = data['emotion_idx']
 
@@ -28,3 +28,4 @@ for i in range(len(file_list)):
 
 
 
+print("Step 2 is done!")

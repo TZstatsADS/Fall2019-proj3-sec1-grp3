@@ -8,7 +8,8 @@ import numpy as np
 import h5py
 import skimage.io
 
-data_path = './data/data_2'
+path = os.getcwd()
+data_path = path + '/data/data_2'
 
 c1_path = os.path.join(data_path, '1')
 c2_path = os.path.join(data_path, '2')
@@ -38,7 +39,7 @@ data_x = []
 data_y = []
 
 
-datapath = os.path.join('./data/h5','data.h5')
+datapath = os.path.join(path + '/data/h5','data.h5')
 if not os.path.exists(os.path.dirname(datapath)):
     os.makedirs(os.path.dirname(datapath))
 

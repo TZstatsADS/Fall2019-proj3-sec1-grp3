@@ -1,3 +1,11 @@
+import cv2
+import glob
+import os
+import numpy as np
+
+
+# You can change the pretrained model path 
+# You should change your 
 """
 visualize results for test image
 """
@@ -22,7 +30,7 @@ total_since = time.time()
 path = os.getcwd()
 
 read_path = path + "/data/data_1"
-# data = pd.read_csv("data/label/label.csv")
+data = pd.read_csv(path + "/data/label/labels_prediction.csv")
 # emotion_idx = data['emotion_idx']
 file_list = sorted(os.listdir(read_path))
 cut_size = 44
@@ -46,7 +54,7 @@ net.load_state_dict(checkpoint['net'].state_dict())
 
 def rgb2gray(rgb):
     return np.dot(rgb[...,:3], [0.299, 0.587, 0.114])
-image_path = 'data/data_1'
+image_path = path + '/data/data_1'
 file_names = glob.glob(image_path+"/*.jpg")
 labels = []
 # for file in file_names:
@@ -108,4 +116,7 @@ for file in file_names:
     # print('Image {} start in {:.0f}m {:.0f}s'.format(os.path.basename(file), time_end // 60, time_end % 60))
 
     print('Image {} start in {:.0f}m {:.0f}s'.format(os.path.basename(file),time_elapsed // 60, time_elapsed % 60))
-labels.to_csv('test_results.csv')
+
+data["Advanced"] = labels
+
+data.to_csv(path + "/data/label/labels_prediction_results.csv")

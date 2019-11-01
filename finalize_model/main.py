@@ -3,6 +3,12 @@ import os
 your_path = "/home/lingyi/Desktop/repo/Fall2019-proj3-sec1--proj3-sec1-grp3/finalize_model"
 os.chdir(your_path)
 
+
+'''
+Training models 
+'''
+# you can skip step0-step3 and use data.h5 file in /data/h5 folder directly
+
 # step0_faceCropper
 cmd = your_path + '/step0_faceCropper.py'
 os.system('{} {}'.format('python', cmd))
@@ -15,8 +21,8 @@ os.system('{} {}'.format('python', cmd))
 cmd = your_path + '/step2_subFolders.py'
 os.system('{} {}'.format('python', cmd))
 
-# step3_H5preprocess
-cmd = your_path + '/step3_H5preprocess.py'
+# step3_preprocess
+cmd = your_path + '/step3_preprocess.py'
 os.system('{} {}'.format('python', cmd))
 
 # step4_mainpro
@@ -27,12 +33,25 @@ os.system('{} {}'.format('python', cmd))
 cmd = your_path + '/step5_k_fold_train.py'
 os.system('{} {}'.format('python', cmd))
 
-# step6
-
-# step7_prePrivateTest.py
-cmd = your_path + '/step7_predPrivateTest.py'
-os.system('{} {}'.format('python', cmd))
 
 
 
-# /home/lingyi/Desktop/repo/Fall2019-proj3-sec1--proj3-sec1-grp3/finalize_model/trained_models/finalize_model_VGG19/1
+
+'''
+Testing results 
+'''
+
+# Please repeat Step0 and Step1 on your testing data 
+# make the data_1 as your input (48x48x3)
+
+
+
+
+# #### TESTING 
+
+# # step7_predPrivateTest.py
+# cmd = your_path + '/step7_predPrivateTest.py'
+# os.system('{} {}'.format('python', cmd))
+
+
+
