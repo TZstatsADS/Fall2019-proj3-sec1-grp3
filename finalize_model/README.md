@@ -1,10 +1,9 @@
 
 
 
+# Environment Requirement 
+> packages in environment at /Lingyi/anaconda3/envs/research:
 
-# packages in environment at /anaconda3/envs/research:
-#
-# Name                    Version                   Build  Channel
 _anaconda_depends         2019.03                  py37_0  
 alabaster                 0.7.12                   py37_0  
 anaconda                  custom                   py37_1  
