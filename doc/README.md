@@ -1,4 +1,4 @@
-**！！！！！！We highly recommend you to use `main.py` in `finalize_model` folder instead of main.ipynd in this folder**<br>
+**！！！We highly recommend you to use `main.py` in `finalize_model` folder instead of main.ipynd in this folder**<br>
 
 # Project: Can you recognize the emotion from an image of a face?
 
