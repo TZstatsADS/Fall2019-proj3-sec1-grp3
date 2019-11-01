@@ -5,8 +5,7 @@
 **Lingyi Cai, Yanan Li, Xiaotong Li, Yiwen Ma, Runzi Qiang**
 
 
-We highly recommend you to use main.py in finalize_model folder instead of main.ipynd in this folder<br>
-Our 10-fold cross validation results are ~50%.<br>
+Our 10-fold cross validation results are ~50.32%.<br>
 All the scripts and data are in the `Fall2019-proj3-sec1--proj3-sec1-grp3/finalize_model` folder. 
 
 
