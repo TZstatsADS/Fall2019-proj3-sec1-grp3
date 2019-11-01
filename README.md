@@ -1,7 +1,7 @@
 # Project: Can you recognize the emotion from an image of a face? 
 
 **Please run `main.py` in the doc folder. <br>**
-**！！！We highly recommend you to use `main.py` in `finalize_model` folder instead of main.ipynd in this folder**<br>
+**！！！We highly recommend you to use `main.py` in `finalize_model` folder instead of main.ipynd in this folder.**<br>
 
 
 <img src="figs/CE.jpg" alt="Compound Emotions" width="500"/>
