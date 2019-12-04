@@ -26,7 +26,7 @@ Term: Fall 2019
 **Contribution statement**: 
 
 + Cai, Lingyi: Applied advanced deep learning models, using images as our input instead of fiducial features. LC preprocessed images, completed face detection, data alignment, data augmentation and built the deep learning models (VGG19, ResNet18, ResNet34, ResNet50). Before trying advanced deep learning, LC applied basic CNN models.
-+ Li, Xiaotong:
++ Li, Xiaotong: Improved data augmentation by using facial chopping by OpenCV, random distortion and experimented on VGG19, ResNet34, ResNet50 architecture and building training and testing pipeline using the resnet34. Also experimented the pretrained model weights such as using ImageNet. 
 + Li, Yanan: Built the baseline GBM Model based on fiducial festures and run it. Test the deep leaning models  (VGG19, ResNet18, ResNet34). 
 + Ma, Yiwen: Improved data augmentation function and built into python class. Extracted festures. Run random forest and knn model. Built convolutional neural network based on fiducial festures. 
 + Qiang, Runzi: Croped the face and improved data augmentation, trained 6 layers CNN model. Modified the main.py and tested the deep leaning models  (VGG19, ResNet18, ResNet34)
